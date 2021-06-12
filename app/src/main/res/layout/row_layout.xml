@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <androidx.cardview.widget.CardView
+        android:background="@color/light_gray"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white">
+        <RelativeLayout
+            android:padding="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/circleImageView"/>
+            <LinearLayout
+                android:layout_toRightOf="@+id/circleImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:paddingLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/name"
+                    android:text="sourcename"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    />
+                <TextView
+                    android:id="@+id/author"
+                    android:text="author"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.5"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/url"
+                    android:text="url"
+                    android:lines="2"
+                    android:background="?attr/selectableItemBackground"
+                    android:textColorLink="@color/black"
+                    android:autoLink="none"
+                    android:linksClickable="true"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/linkColor"
+                    />
+
+                <TextView
+                    android:layout_marginTop = "10dp"
+                    android:id="@+id/title"
+                    android:text="title"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    />
+
+                <TextView
+                    android:layout_marginTop = "10dp"
+                    android:id="@+id/description"
+                    android:text="description"
+                    android:layout_weight="0.5"
+                    android:lines="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    />
+
+                <TextView
+                    android:layout_marginTop = "10dp"
+                    android:id="@+id/content"
+                    android:text="content"
+                    android:lines="4"
+                    android:textStyle="bold"
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    />
+
+                <TextView
+                    android:layout_marginTop = "10dp"
+                    android:id="@+id/publishedAt"
+                    android:text="publishedAt"
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NewsFeed</string>
+    <string name="offlinetext">No Internet connection</string>
+    <string name="retry">RETRY</string>
+</resources>
