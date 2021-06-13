@@ -41,11 +41,6 @@ public class FirebaseMessageReceiver extends FirebaseMessagingService {
         super.onMessageReceived(remoteMessage);
         //check if push notification has notification payload or not
         if (remoteMessage.getNotification() != null) {
-            Map<String, String> data = remoteMessage.getData();
-            String jobType = data.get("type");
-
-
-
             //get the title and body
             String title = remoteMessage.getNotification().getTitle();
             String body = remoteMessage.getNotification().getBody();

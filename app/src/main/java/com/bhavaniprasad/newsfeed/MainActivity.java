@@ -219,28 +219,28 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             String Key1=bundle.getString("Key1");
             String Key0=bundle.getString("Key0");
                 if (Key0!=null) {
-                    Log.d("Key1", "Data1 : " + bundle.getString("data1"));
+                    Log.d("Key0", "Data0 : " + bundle.getString("Key0"));
                     new AlertDialog.Builder(this)
                             .setTitle("Closing application")
-                            .setMessage("Got FCM data"+bundle.getString("Key0"))
+                            .setMessage("Got FCM data "+bundle.getString("Key0"))
                             .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     dialog.cancel();
                                 }
-                            }).setNegativeButton("No", null).show();
+                            }).show();
                 }
                 if (Key1!=null) {
-                    Log.d("Key2", "Data2 : " + bundle.getString("data2"));
+                    Log.d("Key1", "Data1 : " + bundle.getString("Key1"));
                     new AlertDialog.Builder(this)
                             .setTitle("Closing application")
-                            .setMessage("Got FCM data"+bundle.getString("Key1"))
+                            .setMessage("Got FCM data "+bundle.getString("Key1"))
                             .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     dialog.cancel();
                                 }
-                            }).setNegativeButton("No", null).show();
+                            }).show();
                 }
         }
     }
@@ -311,25 +311,25 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 Log.d("Key0", "Data0 : " + extras.getString("Key0"));
                 new AlertDialog.Builder(this)
                         .setTitle("Closing application")
-                        .setMessage("Got FCM data value"+extras.getString("Key0"))
+                        .setMessage("Got FCM data value "+extras.getString("Key0"))
                         .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.cancel();
                             }
-                        }).setNegativeButton("No", null).show();
+                        }).show();
             }
             if (Key1!=null) {
                 Log.d("Key1", "Data1 : " + extras.getString("Key1"));
                 new AlertDialog.Builder(this)
                         .setTitle("Closing application")
-                        .setMessage("Got FCM data value"+extras.getString("Key1"))
+                        .setMessage("Got FCM data value "+extras.getString("Key1"))
                         .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.cancel();
                             }
-                        }).setNegativeButton("No", null).show();
+                        }).show();
             }
         }
     }
